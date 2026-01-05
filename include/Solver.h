@@ -38,6 +38,7 @@ public:
      * \brief Méthode de résolution pour une matrice tridiagonale
      */
     static Vec<T> Thomas(const Mat<T>& A, const Vec<T>& b);
+    template Vec<T> Thomas(const Mat<T>& A, const Vec<T>& b);
 
     /**
      * \brief Méthode de résolution pour une matrice inversible quelconque

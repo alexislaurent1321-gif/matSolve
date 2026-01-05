@@ -3,7 +3,7 @@
  */
 
 
-#include "Solver.h"
+#include "solver.h"
 #include "Complex.h"
 #include "Rational.h"
 #include "Mat.h"
