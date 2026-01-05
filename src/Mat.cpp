@@ -88,7 +88,7 @@ template <class T>
 bool Mat<T>::operator==(const Mat<T>& M) const{
     if((*this).nc != M.nc || (*this).nl != M.nl) 
         return false;
-    for(int i; i<M.size(); i++){
+    for(int i=0; i<M.size(); i++){
         if((*this)[i] != M[i]){
             return false;
         }

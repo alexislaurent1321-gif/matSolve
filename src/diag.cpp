@@ -18,7 +18,9 @@ Vec<T> Solver<T>::diag(const Mat<T>& A, const Vec<T>& b){
     }
     return x;
 }
-
+template Vec<double> Solver<double>::diag(const Mat<double>& A, const Vec<double>& b);
+template Vec<Complex> Solver<Complex>::diag(const Mat<Complex>& A, const Vec<Complex>& b);
+template Vec<Rational> Solver<Rational>::diag(const Mat<Rational>& A, const Vec<Rational>& b);
 
 template class Solver<double>;
 template class Solver<Complex>;

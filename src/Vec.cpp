@@ -119,7 +119,7 @@ template <class T>
 bool Vec<T>::operator==(const Vec<T>& V) const{
     if((*this).size() != V.size()) 
         return false;
-    for(int i; i<V.size(); i++){
+    for(int i=0; i<V.size(); i++){
         if((*this)[i] != V[i]){
             return false;
         }

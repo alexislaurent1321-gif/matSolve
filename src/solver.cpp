@@ -3,7 +3,7 @@
  */
 
 
-#include "solver.h"
+#include "Solver.h"
 #include "Complex.h"
 #include "Rational.h"
 #include "Mat.h"
@@ -16,7 +16,7 @@ using namespace std;
 
 // Selectionne la méthode de résolution
 template <class T>
-Vec<T> Solver<T>::solve(const Mat<T>& A, const Vec<T>& b) {
+Vec<T> Solver<T>::solve(const Mat<T>& A, const Vec<T>& b){
 
     bool diag2 = A.isDiag();
     bool tridiag = A.isTridiag();
@@ -73,6 +73,10 @@ Vec<T> Solver<T>::solve(const Mat<T>& A, const Vec<T>& b) {
         return Gauss(A,b);
     } 
 }
+template Vec<double> Solver<double>::solve(const Mat<double>& A, const Vec<double>& b);
+template Vec<Complex> Solver<Complex>::solve(const Mat<Complex>& A, const Vec<Complex>& b);
+template Vec<Rational> Solver<Rational>::solve(const Mat<Rational>& A, const Vec<Rational>& b);
+
 
 // Calcule le maximum du résidu
 template <class T>
@@ -80,6 +84,9 @@ T Solver<T>::computeResNormInf(const Mat<T>& A, const Vec<T>& x, const Vec<T>& b
     Vec<T> r = (A*x-b).abs();
     return *max_element(r.begin(),r.end());
 }
+template double Solver<double>::computeResNormInf(const Mat<double>& A, const Vec<double>& x, const Vec<double>& b);
+template Complex Solver<Complex>::computeResNormInf(const Mat<Complex>& A, const Vec<Complex>& x, const Vec<Complex>& b);
+template Rational Solver<Rational>::computeResNormInf(const Mat<Rational>& A, const Vec<Rational>& x, const Vec<Rational>& b);
 
 
 template class Solver<double>;

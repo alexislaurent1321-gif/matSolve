@@ -8,7 +8,7 @@
 #include "Rational.h"
 
 template <class T>
-Vec<T> Solver<T>::Cholesky(const Mat<T>& A, const Vec<T>& b) {
+Vec<T> Solver<T>::Cholesky(const Mat<T>& A, const Vec<T>& b){
     int N = b.size();
     Mat<T> L(N,N);
     L.init(0);
@@ -35,6 +35,9 @@ Vec<T> Solver<T>::Cholesky(const Mat<T>& A, const Vec<T>& b) {
 
     return  x;
 }
+template Vec<double> Solver<double>::Cholesky(const Mat<double>& A, const Vec<double>& b);
+template Vec<Complex> Solver<Complex>::Cholesky(const Mat<Complex>& A, const Vec<Complex>& b);
+template Vec<Rational> Solver<Rational>::Cholesky(const Mat<Rational>& A, const Vec<Rational>& b);
 
 template class Solver<double>;
 template class Solver<Complex>;
