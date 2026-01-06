@@ -6,8 +6,8 @@
  * \date Décembre 2024
  */
 
-#include "Complex.h"
-#include "Rational.h"
+#include "numbers/Complex.h"
+#include "numbers/Rational.h"
 #include "Vec.h"
 #include "Mat.h"
 

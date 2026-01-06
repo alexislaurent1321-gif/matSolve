@@ -2,7 +2,7 @@
  * @file Rational.cpp
  */
 
-#include "Rational.h"
+#include "numbers/Rational.h"
 #include <cmath>
 
 void Rational::simplify(){

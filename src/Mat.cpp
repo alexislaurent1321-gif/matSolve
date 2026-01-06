@@ -3,8 +3,8 @@
  */
 
 #include "Mat.h"
-#include "Complex.h"
-#include "Rational.h"
+#include "numbers/Complex.h"
+#include "numbers/Rational.h"
 #include "Vec.h"
 #include "utils.h"
 

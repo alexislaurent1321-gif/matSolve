@@ -3,9 +3,9 @@
  */
 
 #include "Solver.h"
-#include "Complex.h"
+#include "numbers/Complex.h"
 #include "utils.h"
-#include "Rational.h"
+#include "numbers/Rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

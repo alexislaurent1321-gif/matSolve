@@ -3,8 +3,8 @@
  */
 
 #include "Solver.h"
-#include "Complex.h"
-#include "Rational.h"
+#include "numbers/Complex.h"
+#include "numbers/Rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

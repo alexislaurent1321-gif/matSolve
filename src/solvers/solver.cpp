@@ -4,8 +4,8 @@
 
 
 #include "Solver.h"
-#include "Complex.h"
-#include "Rational.h"
+#include "numbers/Complex.h"
+#include "numbers/Rational.h"
 #include "Mat.h"
 #include <stdexcept>
 #include <algorithm>
