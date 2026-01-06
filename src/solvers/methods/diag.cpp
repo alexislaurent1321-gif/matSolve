@@ -2,11 +2,11 @@
  * @file diag.cpp
  */
 
-#include "solvers/solver.h"
-#include "linear/mat.h"
-#include "linear/vec.h"
-#include "numbers/complex.h"
-#include "numbers/rational.h"
+#include "matSolve/solvers/solver.h"
+#include "matSolve/linear/mat.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

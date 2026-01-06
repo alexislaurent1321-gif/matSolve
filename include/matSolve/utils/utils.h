@@ -6,10 +6,10 @@
  * \date Décembre 2024
  */
 
-#include "numbers/complex.h"
-#include "numbers/rational.h"
-#include "linear/vec.h"
-#include "linear/mat.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/linear/mat.h"
 
 /**
  * \brief Retourne la racine carrée pour chaque type

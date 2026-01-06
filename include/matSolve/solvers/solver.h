@@ -6,8 +6,8 @@
  * \date Décembre 2024
  */
 
-#include "linear/vec.h"
-#include "linear/mat.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/linear/mat.h"
 
 #if !defined(SOLVER_H)
 #define SOLVER_H

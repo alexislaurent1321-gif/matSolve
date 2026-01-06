@@ -2,9 +2,9 @@
  * @file climb.cpp
  */
 
-#include "solvers/solver.h"
-#include "numbers/complex.h"
-#include "numbers/rational.h"
+#include "matSolve/solvers/solver.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

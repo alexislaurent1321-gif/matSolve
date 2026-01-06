@@ -2,10 +2,10 @@
  * @file Vec.cpp
  */
 
-#include "linear/vec.h"
-#include "numbers/complex.h"
-#include "numbers/rational.h"
-#include "utils/utils.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/utils/utils.h"
 
 // Constructeur
 

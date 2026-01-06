@@ -2,8 +2,8 @@
  * @file conj.cpp
  */
 
-#include "utils/utils.h"
-#include "numbers/complex.h"
+#include "matSolve/utils/utils.h"
+#include "matSolve/numbers/complex.h"
 
 // Conjugué complexe pour les différents types
 

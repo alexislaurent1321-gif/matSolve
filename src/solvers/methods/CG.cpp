@@ -1,7 +1,7 @@
-#include "solvers/solver.h"
-#include "numbers/complex.h"
-#include "numbers/rational.h"
-#include "utils/utils.h"
+#include "matSolve/solvers/solver.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/utils/utils.h"
 #include <cmath>
 #include <cassert>
 

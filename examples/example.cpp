@@ -9,13 +9,13 @@ de ces derniers, on aura recours à une classe Rational qui gère les éléments
 rationnels.
 */
 
-#include "linear/mat.h"
+#include "matSolve/linear/mat.h"
 #include <iostream>
-#include "numbers/rational.h"
-#include "numbers/complex.h"
-#include "linear/vec.h"
-#include "solvers/solver.h"
-#include "utils/utils.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/solvers/solver.h"
+#include "matSolve/utils/utils.h"
 
 using namespace std;
 

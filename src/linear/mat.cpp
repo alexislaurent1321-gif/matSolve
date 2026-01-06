@@ -2,11 +2,11 @@
  * @file Mat.cpp
  */
 
-#include "linear/mat.h"
-#include "numbers/complex.h"
-#include "numbers/rational.h"
-#include "linear/vec.h"
-#include "utils/utils.h"
+#include "matSolve/linear/mat.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/utils/utils.h"
 
 
 // Implémentations des méthodes de Mat
