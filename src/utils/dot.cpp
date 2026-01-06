@@ -2,8 +2,8 @@
  * @file dot.cpp
  */
 
-#include "utils.h"
-#include "numbers/Complex.h"
+#include "utils/utils.h"
+#include "numbers/complex.h"
 
 // Produit scalaire
 

@@ -2,11 +2,11 @@
  * @file Thomas.cpp
  */
 
-#include "Solver.h"
-#include "Mat.h"
-#include "Vec.h"
-#include "numbers/Complex.h"
-#include "numbers/Rational.h"
+#include "solvers/solver.h"
+#include "linear/mat.h"
+#include "linear/vec.h"
+#include "numbers/complex.h"
+#include "numbers/rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

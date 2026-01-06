@@ -2,7 +2,7 @@
  * @file Complex.cpp
  */
 
-#include "numbers/Complex.h"
+#include "numbers/complex.h"
 #include <cmath>
 
 const Complex Complex::i(0,1);

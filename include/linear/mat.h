@@ -6,7 +6,7 @@
  * \date Décembre 2024
  */
 
-#include "Vec.h"
+#include "linear/vec.h"
 
 #if !defined(MAT_H)
 #define MAT_H

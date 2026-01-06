@@ -2,8 +2,8 @@
  * @file conj.cpp
  */
 
-#include "utils.h"
-#include "numbers/Complex.h"
+#include "utils/utils.h"
+#include "numbers/complex.h"
 
 // Conjugué complexe pour les différents types
 

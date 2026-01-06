@@ -3,9 +3,9 @@
  * \brief Méthode LU
  */
 
-#include "Solver.h"
-#include "numbers/Complex.h"
-#include "numbers/Rational.h"
+#include "solvers/solver.h"
+#include "numbers/complex.h"
+#include "numbers/rational.h"
 
 template class Solver<double>;
 template class Solver<Complex>;

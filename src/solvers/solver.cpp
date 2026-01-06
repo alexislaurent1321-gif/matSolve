@@ -3,13 +3,13 @@
  */
 
 
-#include "Solver.h"
-#include "numbers/Complex.h"
-#include "numbers/Rational.h"
-#include "Mat.h"
+#include "solvers/solver.h"
+#include "numbers/complex.h"
+#include "numbers/rational.h"
+#include "linear/mat.h"
 #include <stdexcept>
 #include <algorithm>
-#include "utils.h"
+#include "utils/utils.h"
 
 using namespace std;
 
