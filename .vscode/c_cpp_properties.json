@@ -3,10 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                // "${workspaceFolder}/**"
                 "${workspaceFolder}/include**"
-                // // "${vcpkgRoot}/x64-windows/include"
-                // "$C:/vcpkg/installed/x64-windows/include"
             ],
             "defines": [
                 "_DEBUG",
