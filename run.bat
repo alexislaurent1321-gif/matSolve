@@ -1,7 +1,6 @@
 @echo off
-echo Compilation
+echo Compilation  
 
-
-cmake -B build 
-cmake --build build --config Release   
-.\build\Release\MatrixProject.exe   
+cmake -B build -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++
+cmake --build build
+build\MatrixProject.exe

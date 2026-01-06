@@ -11,7 +11,7 @@
 #include <cmath>
 #include <numeric>
 
-#ifndef RATIONAL_H
+#if !defined(RATIONAL_H)
 #define RATIONAL_H
 
 /**

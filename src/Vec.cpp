@@ -7,10 +7,6 @@
 #include "Rational.h"
 #include "utils.h"
 
-template class Vec<double>;
-template class Vec<Complex>;
-template class Vec<Rational>;
-
 // Constructeur
 
 template <class T>
@@ -126,3 +122,7 @@ bool Vec<T>::operator==(const Vec<T>& V) const{
     }
     return true;
 }
+
+template class Vec<double>;
+template class Vec<Complex>;
+template class Vec<Rational>;

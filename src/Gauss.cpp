@@ -3,6 +3,9 @@
 #include "Complex.h"
 #include "Rational.h"
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
 
 template <class T>
 Vec<T> Solver<T>::Gauss(const Mat<T>& A, const Vec<T>& b){
@@ -36,7 +39,3 @@ Vec<T> Solver<T>::Gauss(const Mat<T>& A, const Vec<T>& b){
 template Vec<double> Solver<double>::Gauss(const Mat<double>& A, const Vec<double>& b);
 template Vec<Complex> Solver<Complex>::Gauss(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::Gauss(const Mat<Rational>& A, const Vec<Rational>& b);
-
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;

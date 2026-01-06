@@ -13,7 +13,7 @@
 #include <fstream>
 using namespace std;
 
-#ifndef VEC_H
+#if !defined(VEC_H)
 #define VEC_H
 
 /**

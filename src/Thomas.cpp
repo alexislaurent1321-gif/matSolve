@@ -8,6 +8,10 @@
 #include "Complex.h"
 #include "Rational.h"
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
+
 template <typename T>
 Vec<T> Solver<T>::Thomas(const Mat<T>& A, const Vec<T>& b) {
     int N = b.size();
@@ -38,8 +42,6 @@ template Vec<Complex> Solver<Complex>::Thomas(const Mat<Complex>& A, const Vec<C
 template Vec<Rational> Solver<Rational>::Thomas(const Mat<Rational>& A, const Vec<Rational>& b);
 
 
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;
+
 
 

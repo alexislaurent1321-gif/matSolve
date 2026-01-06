@@ -8,10 +8,6 @@
 #include "Vec.h"
 #include "utils.h"
 
-template class Mat<double>;
-template class Mat<Complex>;
-template class Mat<Rational>;
-
 
 // Implémentations des méthodes de Mat
 template <class T>
@@ -282,3 +278,7 @@ T Mat<T>::det() const{
     }
     return result;
 }
+
+template class Mat<double>;
+template class Mat<Complex>;
+template class Mat<Rational>;

@@ -8,7 +8,7 @@
 
 #include "Vec.h"
 
-#ifndef MAT_H
+#if !defined(MAT_H)
 #define MAT_H
 
 using namespace std;

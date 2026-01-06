@@ -7,6 +7,10 @@
 #include "utils.h"
 #include "Rational.h"
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
+
 template <class T>
 Vec<T> Solver<T>::Cholesky(const Mat<T>& A, const Vec<T>& b){
     int N = b.size();
@@ -39,6 +43,3 @@ template Vec<double> Solver<double>::Cholesky(const Mat<double>& A, const Vec<do
 template Vec<Complex> Solver<Complex>::Cholesky(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::Cholesky(const Mat<Rational>& A, const Vec<Rational>& b);
 
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;

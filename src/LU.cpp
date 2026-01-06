@@ -7,6 +7,10 @@
 #include "Complex.h"
 #include "Rational.h"
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
+
 // Implémentation de solveLU
 template <class T>
 Vec<T> Solver<T>::LU(const Mat<T>& A, const Vec<T>& b){
@@ -49,6 +53,3 @@ template Vec<double> Solver<double>::LU(const Mat<double>& A, const Vec<double>&
 template Vec<Complex> Solver<Complex>::LU(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::LU(const Mat<Rational>& A, const Vec<Rational>& b);
 
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;

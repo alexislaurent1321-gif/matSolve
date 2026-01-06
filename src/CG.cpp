@@ -46,3 +46,5 @@ template Vec<double> Solver<double>::CG(const Mat<double>& A, const Vec<double>&
 template Vec<Complex> Solver<Complex>::CG(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::CG(const Mat<Rational>& A, const Vec<Rational>& b);
 
+
+

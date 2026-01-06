@@ -6,7 +6,7 @@
  * \date Décembre 2024
  */
 
-#ifndef COMPLEX_H
+#if !defined(COMPLEX_H)
 #define COMPLEX_H
 
 #include <cassert>

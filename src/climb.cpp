@@ -6,6 +6,10 @@
 #include "Complex.h"
 #include "Rational.h"
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
+
 template <class T>
 Vec<T> Solver<T>::climb(const Mat<T>& A, const Vec<T>& b){
     int N = b.size();
@@ -20,6 +24,4 @@ template Vec<double> Solver<double>::climb(const Mat<double>& A, const Vec<doubl
 template Vec<Complex> Solver<Complex>::climb(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::climb(const Mat<Rational>& A, const Vec<Rational>& b);
 
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;
+

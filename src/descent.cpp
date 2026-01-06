@@ -23,3 +23,5 @@ Vec<T> Solver<T>::descent(const Mat<T>& A, const Vec<T>& b){
 template Vec<double> Solver<double>::descent(const Mat<double>& A, const Vec<double>& b);
 template Vec<Complex> Solver<Complex>::descent(const Mat<Complex>& A, const Vec<Complex>& b);
 template Vec<Rational> Solver<Rational>::descent(const Mat<Rational>& A, const Vec<Rational>& b);
+
+

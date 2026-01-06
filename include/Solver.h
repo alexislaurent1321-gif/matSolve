@@ -9,7 +9,7 @@
 #include "Vec.h"
 #include "Mat.h"
 
-#ifndef SOLVER_H
+#if !defined(SOLVER_H)
 #define SOLVER_H
 
 /**

@@ -13,6 +13,9 @@
 
 using namespace std;
 
+template class Solver<double>;
+template class Solver<Complex>;
+template class Solver<Rational>;
 
 // Selectionne la méthode de résolution
 template <class T>
@@ -89,6 +92,4 @@ template Complex Solver<Complex>::computeResNormInf(const Mat<Complex>& A, const
 template Rational Solver<Rational>::computeResNormInf(const Mat<Rational>& A, const Vec<Rational>& x, const Vec<Rational>& b);
 
 
-template class Solver<double>;
-template class Solver<Complex>;
-template class Solver<Rational>;
+
