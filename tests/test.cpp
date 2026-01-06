@@ -3,7 +3,7 @@
 \section intro_sec Introduction
 
 Ce projet a pour objectif d'implémenter différentes méthodes de résolution de systèmes 
-linéaires $Ax = b$ en créant une bibliothèque C++. Les matrices et vecteurs utilisés peuvent 
+linéaires $Ax = b$ en créant une bibliothèque C++. Les resources/matrices et vecteurs utilisés peuvent 
 être définis sur différents ensembles numériques : réels, complexes et entiers. Pour le traitement 
 de ces derniers, on aura recours à une classe Rational qui gère les éléments de l'ensemble des nombres 
 rationnels.
@@ -24,14 +24,14 @@ int main()
 {
     // Double
 
-    Mat<double> Ad("Matrices/matrice_reelle.txt");
-    Vec<double> bd("Matrices/vecteur_b_reel.txt");
+    Mat<double> Ad("resources/matrices/matrice_reelle.txt");
+    Vec<double> bd("resources/matrices/vecteur_b_reel.txt");
 
     cout << "\n=== Resolution pour les reels ===" << endl;
     Vec<double> xd = Solver<double>::solve(Ad, bd);
     cout << "Solution calculee : " << xd << endl;
 
-    Vec<double> sold("Matrices/solution_x_reel.txt");
+    Vec<double> sold("resources/matrices/solution_x_reel.txt");
     cout << "Solution exacte   : " << sold << endl;
 
     double rd = Solver<double>::computeResNormInf(Ad, xd, bd);
@@ -40,14 +40,14 @@ int main()
 
     // Complexe 1
 
-    Mat<Complex> Ac("Matrices/matrice_complexe.txt");
-    Vec<Complex> bc("Matrices/vecteur_b_complexe.txt");
+    Mat<Complex> Ac("resources/matrices/matrice_complexe.txt");
+    Vec<Complex> bc("resources/matrices/vecteur_b_complexe.txt");
 
     cout << "\n=== Resolution pour les complexes ===" << endl;
     Vec<Complex> xc = Solver<Complex>::solve(Ac, bc);
     cout << "Solution calculee : " << xc << endl;
 
-    Vec<Complex> solc("Matrices/solution_x_complexe.txt");
+    Vec<Complex> solc("resources/matrices/solution_x_complexe.txt");
     cout << "Solution exacte   : " << solc << endl;
 
     Complex rc = Solver<Complex>::computeResNormInf(Ac, xc, bc);
@@ -56,8 +56,8 @@ int main()
 
     // Complexe 2
 
-    Mat<Complex> Ac2("Matrices/matrice_complexe2.txt");
-    Vec<Complex> bc2("Matrices/vecteur_b_complexe2.txt");
+    Mat<Complex> Ac2("resources/matrices/matrice_complexe2.txt");
+    Vec<Complex> bc2("resources/matrices/vecteur_b_complexe2.txt");
 
     cout << "\n=== Resolution pour les complexes ===" << endl;
     Vec<Complex> xc2 = Solver<Complex>::solve(Ac2, bc2);
@@ -68,14 +68,14 @@ int main()
 
     // Rationnel
     
-    Mat<Rational> Ai("Matrices/matrice_entier.txt");
-    Vec<Rational> bi("Matrices/vecteur_b_entier.txt");
+    Mat<Rational> Ai("resources/matrices/matrice_entier.txt");
+    Vec<Rational> bi("resources/matrices/vecteur_b_entier.txt");
 
     cout << "\n=== Resolution pour les rationnels ===" << endl;
     Vec<Rational> xi = Solver<Rational>::solve(Ai, bi);
     cout << "Solution calculee : " << xi << endl;
 
-    Vec<Rational> soli("Matrices/solution_x_entier.txt");
+    Vec<Rational> soli("resources/matrices/solution_x_entier.txt");
     cout << "Solution exacte   : " << soli << endl;
 
     Rational ri = Solver<Rational>::computeResNormInf(Ai, xi, bi);
@@ -84,8 +84,8 @@ int main()
 
     // Rationnel2
     
-    Mat<Rational> Ai2("Matrices/matrice_reelle.txt");
-    Vec<Rational> bi2("Matrices/vecteur_b_reel.txt");
+    Mat<Rational> Ai2("resources/matrices/matrice_reelle.txt");
+    Vec<Rational> bi2("resources/matrices/vecteur_b_reel.txt");
 
     cout << "\n=== Resolution pour les rationnels ===" << endl;
     Vec<Rational> xi2 = Solver<Rational>::solve(Ai2, bi2);

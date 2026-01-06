@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB_RECURSE SOURCES
     src/*.cpp
-    src/*.c
+    tests/*.cpp
 )
 
 file(GLOB_RECURSE HEADERS
