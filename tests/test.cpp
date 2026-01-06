@@ -11,8 +11,8 @@ rationnels.
 
 #include "Mat.h"
 #include <iostream>
-#include "Rational.h"
-#include "Complex.h"
+#include "numbers/Rational.h"
+#include "numbers/Complex.h"
 #include "Vec.h"
 #include "Solver.h"
 #include "utils.h"
