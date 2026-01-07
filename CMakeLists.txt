@@ -8,14 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB_RECURSE SOURCES
     src/*.cpp
-    tests/*.cpp
-    examples/*.cpp
 )
 
 file(GLOB_RECURSE HEADERS
     include/*.h
-    include/*.hpp
-    include/numbers/*.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
