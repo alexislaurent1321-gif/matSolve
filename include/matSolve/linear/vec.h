@@ -16,73 +16,76 @@ using namespace std;
 #if !defined(VEC_H)
 #define VEC_H
 
-/**
- * \brief Classe de vecteurs dévirée de la classe std::vector avec opérations vectorielles de base
- */
-template <class T>
-class Vec : public vector<T>
-{
-public:
+namespace matSolve{
 
     /**
-     * \brief Construit un vecteur avec sa taille
+     * \brief Classe de vecteurs dévirée de la classe std::vector avec opérations vectorielles de base
      */
-    Vec(int N=1) : vector<T>(N) {}
+    template <class T>
+    class Vec : public vector<T>
+    {
+    public:
 
-    /**
-     * \brief Construit un vecteur avec sa taille et remplissage avec un nombre
-     */
-    Vec(int N, T a) : vector<T>(N,a) {}
+        /**
+         * \brief Construit un vecteur avec sa taille
+         */
+        Vec(int N=1) : vector<T>(N) {}
 
-    /**
-     * \brief Construit un vecteur par copie
-     */
-    Vec(const Vec<T>& V) : vector<T>(V) {}
+        /**
+         * \brief Construit un vecteur avec sa taille et remplissage avec un nombre
+         */
+        Vec(int N, T a) : vector<T>(N,a) {}
 
-    /**
-     * \brief Construit un vecteur à partir du nom d'un fichier
-     */
-    Vec(const char* fileName);
+        /**
+         * \brief Construit un vecteur par copie
+         */
+        Vec(const Vec<T>& V) : vector<T>(V) {}
 
-
-
-    // Méthodes utiles
-
-    /**
-     * \brief Remplie un vecteur avec un nombre
-     */
-    void init(T a=0);
-
-    /**
-     * \brief Retourne un vecteur avec les valeurs absolues
-     */
-    Vec<T> abs() const; // Retourne la valeur absolue des éléments
+        /**
+         * \brief Construit un vecteur à partir du nom d'un fichier
+         */
+        Vec(const char* fileName);
 
 
-    // Opérations vectorielles
-    Vec<T> operator+(const Vec<T>& V) const;
-    Vec<T> operator-(const Vec<T>& V) const;
-    Vec<T>& operator+=(const Vec<T>& V);
-    Vec<T>& operator-=(const Vec<T>& V);
 
-    // Opérations avec un scalaire
-    Vec<T> operator*(const T& a) const;
-    Vec<T> operator/(const T& a) const;
-    Vec<T>& operator*=(const T& a);
-    Vec<T>& operator/=(const T& a);
+        // Méthodes utiles
 
-    /**
-     * \brief Deux vecteurs sont égaux si ils sont de même taille et ont les mêmes composantes
-     */
-    bool operator==(const Vec<T>& V) const;
+        /**
+         * \brief Remplie un vecteur avec un nombre
+         */
+        void init(T a=0);
 
-    /**
-     * \brief Affichage d'un vecteur par l'instruction cout << 
-     */
-    friend std::ostream& operator<<(std::ostream& os, const Vec<T>& V) {
-        os << "["; for(int i=0; i<V.size()-1; i++) os << V[i] << " "; os << V[V.size()-1] << "]";
-        return os;
-    }
-};
+        /**
+         * \brief Retourne un vecteur avec les valeurs absolues
+         */
+        Vec<T> abs() const; // Retourne la valeur absolue des éléments
+
+
+        // Opérations vectorielles
+        Vec<T> operator+(const Vec<T>& V) const;
+        Vec<T> operator-(const Vec<T>& V) const;
+        Vec<T>& operator+=(const Vec<T>& V);
+        Vec<T>& operator-=(const Vec<T>& V);
+
+        // Opérations avec un scalaire
+        Vec<T> operator*(const T& a) const;
+        Vec<T> operator/(const T& a) const;
+        Vec<T>& operator*=(const T& a);
+        Vec<T>& operator/=(const T& a);
+
+        /**
+         * \brief Deux vecteurs sont égaux si ils sont de même taille et ont les mêmes composantes
+         */
+        bool operator==(const Vec<T>& V) const;
+
+        /**
+         * \brief Affichage d'un vecteur par l'instruction cout << 
+         */
+        friend std::ostream& operator<<(std::ostream& os, const Vec<T>& V) {
+            os << "["; for(int i=0; i<V.size()-1; i++) os << V[i] << " "; os << V[V.size()-1] << "]";
+            return os;
+        }
+    };
+}
 
 #endif

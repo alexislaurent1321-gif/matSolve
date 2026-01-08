@@ -13,91 +13,94 @@
 #include <iostream>
 #include <cmath>
 
-/**
- * \brief Classe basique de complexes
- */
-class Complex {
-
-private:
-    double re, im;
-
-public:
-    // Constructeurs
-    /**
-     * \brief Constructeur par défaut avec un réel
-     */
-    Complex(double re_=0) : re(re_), im(0) {}
+namespace matSolve{
 
     /**
-     * \brief Constructeur avec un réel et imaginaire
+     * \brief Classe basique de complexes
      */
-    Complex(double re_, double im_) : re(re_), im(im_) {}
+    class Complex {
 
-    /**
-     * \brief Constructeur par copie
-     */
-    Complex(const Complex& z) : re(z.re), im(z.im) {}
+    private:
+        double re, im;
 
-    /**
-     * \brief Nombre i statique
-     */
-    static const Complex i;
+    public:
+        // Constructeurs
+        /**
+         * \brief Constructeur par défaut avec un réel
+         */
+        Complex(double re_=0) : re(re_), im(0) {}
 
-    // Accesseurs pour les parties réelle et imaginaire     
-    double real() const { return re; }
-    double imag() const { return im; }
-    void real(double real_) { re = real_; }
-    void imag(double imag_) { im = imag_; }
+        /**
+         * \brief Constructeur avec un réel et imaginaire
+         */
+        Complex(double re_, double im_) : re(re_), im(im_) {}
 
-    // Méthodes sur les complexes
-    /**
-     * \brief Retourne le module
-     */
-    double modulus() const { return std::sqrt(re*re + im*im); }
+        /**
+         * \brief Constructeur par copie
+         */
+        Complex(const Complex& z) : re(z.re), im(z.im) {}
 
-    /**
-     * \brief Retourne le conjugué
-     */
-    Complex conj() const { return Complex(re,-im); }
+        /**
+         * \brief Nombre i statique
+         */
+        static const Complex i;
 
-    /**
-     * \brief Retourne l'argument
-     */
-    double angle() const { return std::atan2(im,re); }
+        // Accesseurs pour les parties réelle et imaginaire     
+        double real() const { return re; }
+        double imag() const { return im; }
+        void real(double real_) { re = real_; }
+        void imag(double imag_) { im = imag_; }
 
-    // Opérations avec un réel
-    Complex operator+(const double& a) const;
-    Complex operator-(const double& a) const;
-    Complex operator*(const double& a) const;
-    Complex operator/(const double& a) const;
+        // Méthodes sur les complexes
+        /**
+         * \brief Retourne le module
+         */
+        double modulus() const { return std::sqrt(re*re + im*im); }
 
-    // Opérations binaires
-    Complex operator+(const Complex& z) const;
-    Complex operator-(const Complex& z) const;
-    Complex operator*(const Complex& z) const;
-    Complex operator/(const Complex& z) const;
-    bool operator==(const Complex& z) const;
-    bool operator!=(const Complex& z) const;  
-    bool operator<(const Complex& z) const;  
-    bool operator>(const Complex& z) const;   
+        /**
+         * \brief Retourne le conjugué
+         */
+        Complex conj() const { return Complex(re,-im); }
 
-    // Opérations unaires
-    Complex& operator+=(const Complex& z);
-    Complex& operator-=(const Complex& z);
-    Complex& operator*=(const Complex& z);
-    Complex& operator/=(const Complex& z);
-    Complex operator-() const;
+        /**
+         * \brief Retourne l'argument
+         */
+        double angle() const { return std::atan2(im,re); }
 
-    /**
-     * \brief Affichage d'une complexe par l'instruction cout << 
-     */
-    friend std::ostream& operator<<(std::ostream& os, const Complex& z);
+        // Opérations avec un réel
+        Complex operator+(const double& a) const;
+        Complex operator-(const double& a) const;
+        Complex operator*(const double& a) const;
+        Complex operator/(const double& a) const;
 
-    /**
-     * \brief Lecture d'un complexe à partir d'un fichier par l'instruction cin >>. Lis deux réels espacés
-     */
-    friend std::istream& operator>>(std::istream& is, Complex& z);
-};
+        // Opérations binaires
+        Complex operator+(const Complex& z) const;
+        Complex operator-(const Complex& z) const;
+        Complex operator*(const Complex& z) const;
+        Complex operator/(const Complex& z) const;
+        bool operator==(const Complex& z) const;
+        bool operator!=(const Complex& z) const;  
+        bool operator<(const Complex& z) const;  
+        bool operator>(const Complex& z) const;   
+
+        // Opérations unaires
+        Complex& operator+=(const Complex& z);
+        Complex& operator-=(const Complex& z);
+        Complex& operator*=(const Complex& z);
+        Complex& operator/=(const Complex& z);
+        Complex operator-() const;
+
+        /**
+         * \brief Affichage d'une complexe par l'instruction cout << 
+         */
+        friend std::ostream& operator<<(std::ostream& os, const Complex& z);
+
+        /**
+         * \brief Lecture d'un complexe à partir d'un fichier par l'instruction cin >>. Lis deux réels espacés
+         */
+        friend std::istream& operator>>(std::istream& is, Complex& z);
+    };
+}
 
 
 
