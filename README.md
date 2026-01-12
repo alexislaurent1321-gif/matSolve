@@ -18,24 +18,16 @@ doxywizard).
 
 # Structure générale du projet
 
-Le projet est organisé autour des fichiers suivants :
+Le projet est organisé autour des dossiers suivants :
 
--   `Mat.h` et `Mat.cpp` : gestion des matrices,
+-   `linear` : contient les classes de matrice et de vecteur,
 
--   `Vec.h` et `Vec.cpp` : gestion des vecteurs,
+-   `numbers` : contient les classes de nombres complexes et rationnels,
 
--   `Complex.h` et `Complex.cpp` : gestion des nombres complexes,
+-   `solver` : contient différentes méthodes de résolution de systèmes linéaires,
 
--   `Rational.h` et `Rational.cpp` : gestion des nombres rationnels,
-
--   `Solver.h` et `solve.cpp`, `diag.cpp`, `tridiag.cpp`, `climb.cpp`,
-    `descent.cpp`, `Gauss.cpp`, `LU.cpp`, `Cholesky.cpp`,`CG.cpp` :
-    implémentation des méthodes de résolution,
-
--   `utils.h` et `utils.cpp` : fonctions utilitaires (racine carrée,
+-   `utils` : fonctions utilitaires (racine carrée,
     valeur absolue, etc.),
-
--   `main.cpp` et `main2.cpp`: programmes principaux.
 
 ## Classe `Vec` 
 
