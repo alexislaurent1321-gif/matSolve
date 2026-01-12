@@ -102,7 +102,7 @@ fichier :
     en double.
 
 -   `ABS` : Retourne `fabs` pour un double, la valeur absolue codée dans
-    `Rational` pour les rationnels et ne fais rien pour les complexes.
+    `Rational` pour les rationnels et ne fait rien pour les complexes.
 
 -   `dot` : Calcul le produit scalaire de deux vecteurs et le produit
     hermitien si ceux-ci complexes.
