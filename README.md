@@ -24,7 +24,7 @@ Le projet est organisé autour des dossiers suivants :
 
 -   `numbers` : contient les classes de nombres complexes et rationnels,
 
--   `solver` : contient différentes méthodes de résolution de systèmes linéaires,
+-   `solvers` : contient différentes méthodes de résolution de systèmes linéaires,
 
 -   `utils` : fonctions utilitaires (racine carrée,
     valeur absolue, etc.),
