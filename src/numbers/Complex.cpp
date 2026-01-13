@@ -1,5 +1,5 @@
 /**
- * @file Complex.cpp
+ * @file complex.cpp
  */
 
 #include "matSolve/numbers/complex.h"

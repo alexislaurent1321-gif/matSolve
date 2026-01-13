@@ -1,5 +1,5 @@
 /**
- * \file Rational.h
+ * \file rational.h
  * \brief Classe rationnelle
  * \author Alexis LAURENT
  * \author Killian DALLERAC

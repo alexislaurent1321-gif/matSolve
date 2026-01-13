@@ -1,5 +1,5 @@
 /**
- * @file Rational.cpp
+ * @file rational.cpp
  */
 
 #include "matSolve/numbers/rational.h"

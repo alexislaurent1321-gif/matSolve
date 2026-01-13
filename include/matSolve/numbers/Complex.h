@@ -1,5 +1,5 @@
 /**
- * \file Complex.h
+ * \file complex.h
  * \brief Classe complexe
  * \author Alexis LAURENT
  * \author Killian DALLERAC
