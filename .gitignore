@@ -1,1 +1,4 @@
-/.vscode
+.vscode/
+html/
+latex/
+Doxyfile
