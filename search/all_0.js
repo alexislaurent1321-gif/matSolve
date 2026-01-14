@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['classe_20mat_0',['Classe &lt;span class=&quot;tt&quot;&gt;Mat&lt;/span&gt;',['../md_README.html#autotoc_md4',1,'']]],
-  ['classe_20solver_1',['Classe &lt;span class=&quot;tt&quot;&gt;Solver&lt;/span&gt;',['../md_README.html#autotoc_md5',1,'']]],
-  ['classe_20vec_2',['Classe &lt;span class=&quot;tt&quot;&gt;Vec&lt;/span&gt;',['../md_README.html#autotoc_md3',1,'']]],
-  ['classes_20complex_20et_20rational_3',['Classes &lt;span class=&quot;tt&quot;&gt;Complex&lt;/span&gt; et &lt;span class=&quot;tt&quot;&gt;Rational&lt;/span&gt;',['../md_README.html#autotoc_md6',1,'']]],
-  ['complex_20et_20rational_4',['Classes &lt;span class=&quot;tt&quot;&gt;Complex&lt;/span&gt; et &lt;span class=&quot;tt&quot;&gt;Rational&lt;/span&gt;',['../md_README.html#autotoc_md6',1,'']]]
+  ['abs_0',['ABS',['../utils_8h.html#aebb1a53cd49e7e292491c8221e679eb0',1,'ABS(const int &amp;a):&#160;ABS.cpp'],['../ABS_8cpp.html#aebb1a53cd49e7e292491c8221e679eb0',1,'ABS(const int &amp;a):&#160;ABS.cpp']]],
+  ['abs_1',['abs',['../classVec.html#a2922b297bba50bcc8599f4e3e1e349b4',1,'Vec']]],
+  ['abs_2ecpp_2',['ABS.cpp',['../ABS_8cpp.html',1,'']]],
+  ['angle_3',['angle',['../classComplex.html#a392fef693b6ac1e8de4d7d3bed4418d1',1,'Complex']]]
 ];
