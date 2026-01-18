@@ -1,0 +1,6 @@
+#include "matSolve/linear/mat.h"
+#include "matSolve/numbers/rational.h"
+#include "matSolve/numbers/complex.h"
+#include "matSolve/linear/vec.h"
+#include "matSolve/solvers/solver.h"
+#include "matSolve/utils/utils.h"
