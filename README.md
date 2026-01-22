@@ -4,9 +4,7 @@ Simple bibliothèque de résolution de système linéaire pour des systèmes ré
 
 
 # Démo
-La bibliothèque peut-être testée via la démo suivante : 
-https://github.com/alexislaurent1321-gif/test_matSolve
-[](#https://github.com/alexislaurent1321-gif/test_matSolve)
+La bibliothèque peut-être testée via la [démo](https://github.com/alexislaurent1321-gif/test_matSolve).
 
 # Introduction
 
